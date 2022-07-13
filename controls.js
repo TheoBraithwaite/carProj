@@ -11,6 +11,11 @@ class Controls{
         //(Can't be used outside of this controls class)*/
     }
 
+    /*Arrow notation refers to the constructor.
+    ("this" comes froms the Controls constructor.)
+    This is different to document.onkeydown=function(event){
+    Where "this" refers to the function itself (E.g, this.left)*/
+    
     #addKeyboardListeners(){
         document.onkeydown=(event)=>{
             switch(event.key){
