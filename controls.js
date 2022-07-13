@@ -15,7 +15,7 @@ class Controls{
     ("this" comes froms the Controls constructor.)
     This is different to document.onkeydown=function(event){
     Where "this" refers to the function itself (E.g, this.left)*/
-    
+
     #addKeyboardListeners(){
         document.onkeydown=(event)=>{
             switch(event.key){
@@ -32,7 +32,7 @@ class Controls{
                     this.reverse=true;
                     break;
             }
-            console.table(this);
+            //console.table(this);
         }
         document.onkeyup=(event)=>{
             switch(event.key){
@@ -49,7 +49,7 @@ class Controls{
                     this.reverse=false;
                     break;
             }
-            console.table(this);
+            //console.table(this);
         }
     }
 }
