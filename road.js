@@ -19,7 +19,7 @@ class Road{
         this.borders=[
             [topLeft,bottomLeft],
             [topRight,bottomRight]
-            //Timestamp: 47:47
+            //Timestamp: 51:??
          ];
     }
 
