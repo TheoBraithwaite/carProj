@@ -20,10 +20,11 @@ class Sensor{
             const start={x:this.car.x, y:this.car.y};
             const end={
                 x:this.car.x - Math.sin(rayAngle)*this.rayLength,
-                y:this.car.y - Math.sin(rayAngle)*this.rayLength
+                y:this.car.y - Math.cos(rayAngle)*this.rayLength
             };
             this.rays.push([start, end]);
         }
+    }
 
         draw(ctx){
             for(let i = 0; i<this.rayCount; i++){
@@ -38,8 +39,7 @@ class Sensor{
                     this.rays[i][1].x,
                     this.rays[i][1].y
                 );
-                ctx.stoke();
+                ctx.stroke();
             }
-        }
     }
 }
