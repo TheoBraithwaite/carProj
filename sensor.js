@@ -10,7 +10,7 @@ class Sensor{
     }
 
     update(roadBorders){
-        this.#castRays
+        this.#castRays();
         this.readings=[];
         for(let i=0;i<this.rays.length;i++){
             this.readings.push(
