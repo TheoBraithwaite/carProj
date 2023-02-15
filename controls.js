@@ -1,14 +1,21 @@
 class Controls{
-    constructor(){
+    constructor(type){
         this.forward=false;
         this.left=false;
         this.right=false;
         this.reverse=false;
 
-        this.#addKeyboardListeners();
-        
-        //# Signifies private method
-        //(Can't be used outside of this controls class)*/
+        switch(type){
+            case "KEYS":
+            this.#addKeyboardListeners();
+
+            //# Signifies private method
+            //(Can't be used outside of this controls class)*/
+
+        case "DUMMY":
+            this.forward=true;
+            break;
+        }
     }
 
     /*Arrow notation refers to the constructor.
