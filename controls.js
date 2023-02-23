@@ -8,6 +8,7 @@ class Controls{
         switch(type){
             case "KEYS":
             this.#addKeyboardListeners();
+            break
 
             //# Signifies private method
             //(Can't be used outside of this controls class)*/
